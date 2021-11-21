@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dr.Harness</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav class="menu">
+                <a href="#catalog" class="menu__link">Каталог</a>
+                <a href="#" class="menu__link">Преимущества</a>
+                <a href="#" class="menu__link">Отзывы</a>
+                <a href="#how-to-order" class="menu__link">Как заказать</a>
+            </nav>
+        </div>
+        <div class="banner">
+            <div class="about">
+                <span class="about__sup-title">Женские кожаные портупеи</span>
+                <h1 class="about__title">Dr.Harness</h1>
+                <span class="about__sub-title">Любаямодель со скидкой 50%</span>
+                <span class="about__price">Всегода за <b>2990</b>р.</span>
+                <div class="buttons">
+                    <button class="about__btn">Повседневные портупеи</button>
+                    <button class="about__btn">Эротические портупеи</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+       <div class="fashion">
+            <h2 class="fashion__title title">Хит №1 в мире – модные жеские портупеи 2017</h2>
+            <p class="fashion__desc">Как и все кожаные аксессуары, портупея находится сегодня на пике востребованности в мире моды, даря своей обладательнице внимание и уверенность в себе.</p> 
+            <p class="fashion__desc">Многообразие видов портупей – это как Характер каждой девушки: от портупеи из тонких ремешков для романтичных и женственных натур, до сложных сплетений из средних и широких - для дерзких и раскрепощенных.</p>
+       </div>
+       <div class="fashion__bcg"></div>
+       <div class="size">
+            <h2 class="size__title title">Таблица размеров</h2>
+            <table class="size__table">
+                <tr>
+                    <th>Международный</th>
+                    <th>XS</th>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>L</th>
+                    <th>XL</th>
+                    <th>XXL</th>
+                </tr>
+                <tr>
+                    <th>Российский</th>
+                    <th>40</th>
+                    <th>42</th>
+                    <th>44/46</th>
+                    <th>48/50</th>
+                    <th>52/54</th>
+                    <th>56</th>
+                </tr>
+                <tr>
+                    <th>Бедра (см)</th>
+                    <td>84-92</td>
+                    <td>92-95</td>
+                    <td>96-101</td>
+                    <td>102-108</td>
+                    <td>109-116</td>
+                    <td>117-21</td>
+                </tr>
+                <tr>
+                    <th>Талия (см)</th>
+                    <td>60-65</td>
+                    <td>66-69</td>
+                    <td>70-77</td>
+                    <td>78-85</td>
+                    <td>86-95</td>
+                    <td>96-102</td>
+                </tr>
+                <tr>
+                    <th>Грудь (см)</th>
+                    <td>74-80</td>
+                    <td>82-85</td>
+                    <td>86-93</td>
+                    <td>94-102</td>
+                    <td>103-113</td>
+                    <td>114-119</td>
+                </tr>
+            </table>
+       </div>
+       <div class="catalog">
+           <a name="catalog"></a>
+           <h2 class="catalog__title title">Каталог</h2>
+           <button class="catalog__btn" onclick="openCity(event, 'casual')" id="defaultOpen">Повседневные портупеи</button>
+           <button class="catalog__btn" onclick="openCity(event, 'erotic')">Эротичесские портупеи</button>
+           <div class="products" id="casual">
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-1.png" alt="">                        
+                    </div>
+                    <span class="card__name">Портупея “Пеппи”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span  id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-disabled">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-disabled">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="red">
+                            <span class="checkcolor card__color_red"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-2.png" alt="">   
+                    </div>
+                    <span class="card__name">Портупея “Влади”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-active">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-active">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-3.png" alt="">                       
+                    </div>
+                    <span class="card__name">Портупея “Джони Миллер”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-disabled">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-disabled">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="red">
+                            <span class="checkcolor card__color_red"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-1.png" alt="">                   
+                    </div>
+                    <span class="card__name">Портупея “Пеппи”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span  id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-disabled">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-disabled">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="red">
+                            <span class="checkcolor card__color_red"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-2.png" alt="">                       
+                    </div>
+                    <span class="card__name">Портупея “Влади”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-active">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-active">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-3.png" alt="">                       
+                    </div>
+                    <span class="card__name">Портупея “Джони Миллер”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-disabled">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-disabled">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="red">
+                            <span class="checkcolor card__color_red"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+           </div>
+           <div class="products" id="erotic">
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-4.png" alt="">                       
+                    </div>
+                    <span class="card__name">Портупея “Пеппи”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span  id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-disabled">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-disabled">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="red">
+                            <span class="checkcolor card__color_red"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-5.png" alt="">                       
+                    </div>
+                    <span class="card__name">Портупея “Влади”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-active">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-active">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-6.png" alt="">                        
+                    </div>
+                    <span class="card__name">Портупея “Джони Миллер”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-disabled">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-disabled">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="red">
+                            <span class="checkcolor card__color_red"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-4.png" alt="">                        
+                    </div>
+                    <span class="card__name">Портупея “Пеппи”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span  id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-disabled">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-disabled">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="red">
+                            <span class="checkcolor card__color_red"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-5.png" alt="">                        
+                    </div>
+                    <span class="card__name">Портупея “Влади”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-active">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-active">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+               <div class="card">
+                    <div class="card__discount">-53%</div>
+                    <div class="card__img">
+                        <img src="img/card-6.png" alt="">                        
+                    </div>
+                    <span class="card__name">Портупея “Джони Миллер”</span>
+                    <div class="card__sizes">
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XS">
+                            <span id="size-active">XS</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="S">
+                            <span id="size-active">S</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="M">
+                            <span id="size-active">M</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="L">
+                            <span id="size-active">L</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XL">
+                            <span id="size-disabled">XL</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-size" class="custom-checkbox" value="XXL">
+                            <span id="size-disabled">XXL</span>
+                        </label>
+                    </div>
+                    <div class="card__color">
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="black">
+                            <span class="checkcolor card__color_black"></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-color" class="custom-checkcolor" value="red">
+                            <span class="checkcolor card__color_red"></span>
+                        </label>
+                    </div>
+                    <div class="card__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                    </div>
+                    <button class="card__btn">Заказать</button>
+               </div>
+           </div>
+       </div>
+       <footer class="footer">
+           <a name="how-to-order"></a>
+           <h2 class="footer__title title">Как заказать</h2>
+           <div class="order-icons">
+               <img src="img/order-icon1.png" alt="">
+               <img src="img/order-icon2.png" alt="">
+               <img src="img/order-icon3.png" alt="">
+               <img src="img/order-icon4.png" alt="">
+           </div>
+           <div class="order-decor">
+           <hr class="hr-dashed-bg">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>  
+           </div>
+           <div class="order-text">
+               <span>Вы оформляете заказ на нашем сайте</span>
+               <span>Менеджер перезвонит для уточнения деталей заказа</span>
+               <span>В ближайшее время отправляем ваш заказ</span>
+               <span>Вы оплачиваете заказ при получении</span>
+           </div>
+       </footer>
+    </main>
+    <div class="popup">
+        <div class="modal">
+            <span class="close-popup">X</span>
+            <img src="img/card-1.png" alt="" class="modal__img">
+            <div class="ordering">               
+                <span class="ordering__name">Портупея “Джони Миллер”</span>
+                <div class="ordering__price">
+                        <span id="card__price_old-price">4990 р.</span>
+                        <span id="card__price_price">2990 р.</span>
+                </div>
+                <form action="" class="ordering__form">
+                    <select class="ordering__select" id="selectvalue">
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                    <input placeholder="Введите ваше имя" type="text" class="ordering__enter">
+                    <input placeholder="Введите ваш телефон" type="text" class="ordering__enter">
+                    <input type="submit"  value="Оформить заказ" class="ordering__btn">
+                </form>
+            </div>
+        </div>   
+    </div> 
+    <script src="js/popup.js"></script>
+    <script src="js/tabs.js"></script>
+</body></html>
